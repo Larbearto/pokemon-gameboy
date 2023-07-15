@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  font-family: 'Press Start 2P', cursive;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +18,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+
   justify-content: center;
   background: linear-gradient(to bottom, #6ab7f5, #fff),
     url(/images/grassfield.png);
@@ -1074,23 +1080,13 @@ body {
   max-width: 425px;
 }
 
-.pokemon__image {
-  position: absolute;
-  bottom: 55%;
-  left: 50%;
-  transform: translate(-63%, 0);
-  height: 18%;
-}
-
 .pokemon__data {
-  position: absolute;
-  font-weight: 600;
-  color: #aaa;
-  top: 54.5%;
-  right: 27%;
   font-size: clamp(8px, 5vw, 25px);
 }
 
+.gameboy-screen {
+  font-family: 'Press Start 2P', cursive;
+}
 .pokemon__name {
   color: #3a444d;
   text-transform: capitalize;
